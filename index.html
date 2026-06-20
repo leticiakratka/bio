@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Letícia Kratka — por onde começar</title>
+<meta name="description" content="Consultora financeira. Você não precisa ganhar mais pra viver com mais tranquilidade. Escolha por onde começar.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Letícia Kratka — por onde começar">
+<meta property="og:description" content="Você não precisa ganhar mais pra viver com mais tranquilidade. Escolha por onde começar.">
+<meta property="og:type" content="website">
+
+<!-- Google Tag Manager (server-side) -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://api.leticiakratka.com.br/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N9GCCZSW');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --lime:#c9b287;        /* champanhe fosco (era lima fluorescente) */
+    --lime-glow:201,178,135;
+    --green-deep:#16201a;
+    --green-mid:#243024;
+    --cream:#f1ece4;
+    --cream-soft:#f7f1ea;
+    --text-light:#f1ece4;
+    --text-muted:#9aa691;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:'Urbanist',sans-serif;
+    background:var(--green-deep);
+    background:radial-gradient(140% 90% at 50% 0%, #243020 0%, var(--green-deep) 55%);
+    color:var(--text-light);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:48px 22px 40px;
+    line-height:1.4;
+  }
+  .wrap{width:100%;max-width:440px;display:flex;flex-direction:column;align-items:center;}
+
+  /* ---- Topo ---- */
+  .avatar{
+    width:104px;height:104px;border-radius:50%;
+    background:linear-gradient(150deg,var(--lime),#aecb4a);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:38px;color:var(--green-deep);
+    border:3px solid rgba(216,234,99,.35);
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    background-size:cover;background-position:center center;
+    overflow:hidden;
+    background-image:url('leticia.jpg');
+  }
+  .avatar span{display:none;}
+
+  .name{font-weight:700;font-size:23px;margin-top:18px;letter-spacing:-.01em;}
+  .handle{font-size:14px;color:var(--text-muted);margin-top:2px;}
+  .tagline{
+    text-align:center;font-size:16px;font-weight:500;
+    color:var(--cream);margin-top:16px;max-width:330px;opacity:.95;
+  }
+  .tagline b{color:var(--lime);font-weight:700;}
+
+  /* ---- Botões ---- */
+  .links{width:100%;display:flex;flex-direction:column;gap:13px;margin-top:30px;}
+
+  a.btn{
+    text-decoration:none;color:inherit;display:block;
+    border-radius:18px;padding:17px 20px;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    -webkit-tap-highlight-color:transparent;
+  }
+  a.btn:active{transform:scale(.985);}
+  .btn .title{font-weight:700;font-size:16.5px;letter-spacing:-.01em;}
+  .btn .sub{font-size:13.5px;margin-top:3px;font-weight:500;opacity:.85;}
+
+  /* Botão principal — Consultoria */
+  .btn-primary{
+    background:var(--lime);color:var(--green-deep);
+    box-shadow:0 12px 28px rgba(var(--lime-glow),.28);
+    position:relative;padding:19px 20px;
+  }
+  .btn-primary .title{font-size:17.5px;}
+  .btn-primary .sub{opacity:.72;color:var(--green-mid);}
+  .btn-primary:hover{box-shadow:0 16px 34px rgba(var(--lime-glow),.4);}
+  .btn-primary .tag{
+    position:absolute;top:-10px;right:16px;background:var(--green-deep);
+    color:var(--lime);font-size:10.5px;font-weight:700;letter-spacing:.06em;
+    text-transform:uppercase;padding:4px 10px;border-radius:20px;
+    border:1px solid rgba(216,234,99,.4);
+  }
+
+  /* Botões secundários — escada */
+  .btn-soft{
+    background:rgba(245,240,235,.06);
+    border:1px solid rgba(245,240,235,.14);
+  }
+  .btn-soft:hover{background:rgba(245,240,235,.1);}
+  .btn-soft .title{color:var(--cream);}
+  .btn-soft .sub{color:var(--text-muted);}
+
+  .divider{
+    width:100%;display:flex;align-items:center;gap:12px;
+    margin:22px 0 4px;color:var(--text-muted);font-size:12px;
+    font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  }
+  .divider::before,.divider::after{content:"";flex:1;height:1px;background:rgba(245,240,235,.12);}
+
+  /* ---- Rodapé ---- */
+  .social{display:flex;gap:14px;margin-top:30px;}
+  .social a{
+    width:46px;height:46px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(245,240,235,.07);border:1px solid rgba(245,240,235,.14);
+    transition:background .15s ease, transform .15s ease;
+  }
+  .social a:active{transform:scale(.92);}
+  .social a:hover{background:rgba(var(--lime-glow),.16);}
+  .social svg{width:21px;height:21px;fill:var(--cream);}
+  .foot{margin-top:26px;font-size:11.5px;color:var(--text-muted);opacity:.7;text-align:center;}
+</style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://api.leticiakratka.com.br/ns.html?id=GTM-N9GCCZSW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<main class="wrap">
+
+  <div class="avatar"><span>LK</span></div>
+  <h1 class="name">Letícia Kratka</h1>
+  <p class="handle">@leticiakratka · Consultora financeira</p>
+  <p class="tagline">Você não precisa ganhar mais pra viver com <b>mais tranquilidade</b>.</p>
+
+  <nav class="links">
+
+    <!-- PRINCIPAL -->
+    <a class="btn btn-primary" href="https://leticiakratka.com.br/consultoria/?utm_source=bio" target="_blank" rel="noopener">
+      <span class="tag">Começar aqui</span>
+      <div class="title">Quero alguém junto na travessia</div>
+      <div class="sub">Agende seu diagnóstico e veja como funciona a consultoria</div>
+    </a>
+
+    <div class="divider">ou comece sozinho, no seu ritmo</div>
+
+    <!-- ESCADA: entrada → profundo -->
+    <a class="btn btn-soft" href="https://jantarfinanceiro.leticiakratka.com.br/?utm_source=bio" target="_blank" rel="noopener">
+      <div class="title">Casais que Decidiram Ficar Ricos</div>
+      <div class="sub">O passo a passo pra fazer o Jantar Financeiro na sua casa</div>
+    </a>
+
+    <a class="btn btn-soft" href="https://cxlvoomp.leticiakratka.com.br/?utm_source=bio" target="_blank" rel="noopener">
+      <div class="title">Caixa Livre</div>
+      <div class="sub">Planilha Financeira pra organizar seu dinheiro</div>
+    </a>
+
+    <a class="btn btn-soft" href="https://travessia.leticiakratka.com.br/?utm_source=bio" target="_blank" rel="noopener">
+      <div class="title">Método Travessia</div>
+      <div class="sub">O caminho completo pra fazer você mesmo: como fazer o dinheiro sobrar, ter destino certo e trabalhar por você</div>
+    </a>
+
+  </nav>
+
+  <div class="social">
+    <a href="https://instagram.com/leticiakratka" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.05 1.8.25 2.2.42.6.2 1 .47 1.4.9.43.4.7.8.9 1.4.17.4.37 1 .42 2.2.06 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.05 1.2-.25 1.8-.42 2.2-.2.6-.47 1-.9 1.4-.4.43-.8.7-1.4.9-.4.17-1 .37-2.2.42-1.3.06-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.05-1.8-.25-2.2-.42-.6-.2-1-.47-1.4-.9-.43-.4-.7-.8-.9-1.4-.17-.4-.37-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.05-1.2.25-1.8.42-2.2.2-.6.47-1 .9-1.4.4-.43.8-.7 1.4-.9.4-.17 1-.37 2.2-.42C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.07-.9.04-1.4.2-1.7.32-.43.17-.74.37-1.06.7-.32.32-.52.63-.7 1.06-.12.3-.28.8-.32 1.7C3.45 8.5 3.45 8.9 3.45 12s0 3.5.07 4.7c.04.9.2 1.4.32 1.7.17.43.37.74.7 1.06.32.32.63.52 1.06.7.3.12.8.28 1.7.32 1.2.06 1.6.07 4.7.07s3.5 0 4.7-.07c.9-.04 1.4-.2 1.7-.32.43-.17.74-.37 1.06-.7.32-.32.52-.63.7-1.06.12-.3.28-.8.32-1.7.06-1.2.07-1.6.07-4.7s0-3.5-.07-4.7c-.04-.9-.2-1.4-.32-1.7-.17-.43-.37-.74-.7-1.06-.32-.32-.63-.52-1.06-.7-.3-.12-.8-.28-1.7-.32C15.5 4 15.1 4 12 4zm0 3.06A4.94 4.94 0 1 1 12 17a4.94 4.94 0 0 1 0-9.88zm0 1.8a3.14 3.14 0 1 0 0 6.28 3.14 3.14 0 0 0 0-6.28zm5.15-.6a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0z"/></svg>
+    </a>
+    <a href="https://wa.me/556199245689?text=Oi%20Let%C3%ADcia%2C%20vim%20da%20sua%20bio%20e%20quero%20saber%20mais" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.15-1.7-.83-1.95-.93-.26-.1-.45-.14-.64.14-.2.28-.74.93-.9 1.12-.17.2-.33.22-.62.07-.3-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.73-1.63-2.02-.17-.3-.02-.45.13-.6.13-.13.3-.33.44-.5.15-.16.2-.28.3-.47.1-.2.05-.36-.02-.5-.08-.16-.64-1.55-.88-2.12-.23-.56-.47-.48-.64-.49l-.55-.01c-.2 0-.5.07-.76.36-.26.28-1 .98-1 2.4 0 1.4 1.03 2.76 1.17 2.95.14.2 2.02 3.08 4.9 4.32.68.3 1.22.47 1.64.6.69.22 1.32.19 1.81.12.55-.08 1.7-.7 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.2-.55-.34zM12 2.2A9.8 9.8 0 0 0 3.6 17l-1.4 5.1 5.2-1.37A9.8 9.8 0 1 0 12 2.2zm0 17.9a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.08.8.82-3-.2-.31A8.1 8.1 0 1 1 12 20.1z"/></svg>
+    </a>
+  </div>
+
+  <p class="foot">© Letícia Kratka · Consultoria Financeira</p>
+
+</main>
+</body>
+</html>
